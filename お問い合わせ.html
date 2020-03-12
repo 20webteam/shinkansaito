@@ -300,7 +300,71 @@
 		top: 11.473px;
 		overflow: visible;
 	}
+
+	.menu {
+		position: fixed;
+		width: 58px;
+		height: 45px;
+		right: 30px;
+		top: 14px;
+		overflow: visible;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+	font-family:  dnp-shuei-mincho-pr6n;
+	background-color:  rgba(18,107,179,1);
+}
+
+label {
+    display: block;
+	width: 58px;
+		height: 45px;
+	
+  
+}
+
+input {
+    display: none;
+}
+
+.menu ul {
+	position: fixed;
+	top: 72px;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+	right: 0px;
+    background :#ffffff;
+    list-style: none;
+}
+
+.menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#menu_bar01:checked ~ #links01 li,
+#menu_bar02:checked ~ #links02 li {
+    height: 54px;
+    opacity: 1;
+}
+
+
+
 </style>
+
+
+
+
 
 </head>
 <body>
@@ -337,7 +401,7 @@
 	</div>
 	<img id="picture" src="c0045456394a154f25abec72877cea.png" srcset="c0045456394a154f25abec72877cea.png 1x, c0045456394a154f25abec72877cea@2x.png 2x">
 	<div id="honbun">
-		<span>早稲田祭2020運営スタッフや新歓企画などについて、何かご質問がございましたら<br/><br/>shinkan@wasedasai.net<br/><br/>までお気軽にお問い合わせください。</span>
+		<span>早稲田祭2020運営スタッフや新歓企画などについて、何かご質問がございましたら<br/><br/><a href="mailto:shinkan@wasedasai.net">shinkan@wasedasai.net</a><br/><br/>までお気軽にお問い合わせください。</span>
 	</div>
 	<svg class="faqbotan">
 		<rect  id="____74" rx="5" ry="5" x="0" y="0" width="246" height="49">
@@ -367,5 +431,22 @@
 	</div>
 	<img id="headerlogo" src="S__15999093_bh.png" srcset="S__15999093_bh.png 1x, S__15999093_bh@2x.png 2x">
 </div>
+
+<div class="menu">
+    <label for="menu_bar01"></label>
+    <input type="checkbox" id="menu_bar01" class="accordion" />
+    <ul id="links01">
+        <li><a href="">○代表挨拶</a></li>
+        <li><a href="">○早稲田祭について</a></li>
+        <li><a href="">○新歓イベント</a></li>
+		<li><a href="">○活動について</a></li>
+		<li><a href="">○入会方法</a></li>
+		<li><a href="">○お問い合わせ/FAQ</a></li>
+		
+    </ul>
+
+</div>
+
+
 </body>
 </html>
