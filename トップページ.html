@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<script async src="https://www.instagram.com/static/bundles/es6/EmbedSDK.js/2fe3a16f6aeb.js"></script>
 		<script>
 				(function(d) {
@@ -16,46 +18,21 @@
 				
 			  </script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(function() {
-  var h = $(window).height();
- 
-  $('#wrap').css('display','none');
-  $('#loader-bg ,#loader').height(h).css('display','block');
-});
- 
-$(window).load(function () { //全ての読み込みが完了したら実行
-  $('#loader-bg').delay(900).fadeOut(800);
-  $('#loader').delay(600).fadeOut(300);
-  $('#wrap').css('display', 'block');
-});
- 
-//10秒たったら強制的にロード画面を非表示
-$(function(){
-  setTimeout('stopload()',10000);
-});
- 
-function stopload(){
-  $('#wrap').css('display','block');
-  $('#loader-bg').delay(900).fadeOut(800);
-  $('#loader').delay(600).fadeOut(300);
-}
-</script>
+
 
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>局・チーム紹介</title>
+<title>トップページ｜早稲田祭2020運営スタッフ新歓特設サイト</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: "局・チーム紹介";
-		--web-view-id:"局・チーム紹介";
+		--web-view-name: "トップページ｜早稲田祭2020運営スタッフ新歓特設サイト";
+		--web-view-id:"トップページ｜早稲田祭2020運営スタッフ新歓特設サイト";
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: "局・チーム紹介";
+		--web-view-ids: "トップページ｜早稲田祭2020運営スタッフ新歓特設サイト";
 	}
 	* {
 		margin: 0;
@@ -846,7 +823,7 @@ function stopload(){
 {	position: absolute;
          width: 330px;
 		left: 50%;
-		top: 1400px;
+		top: 1378px;
 		overflow: scroll;
 		transform:translate(-50%,0);
 		text-align: center;
@@ -914,147 +891,254 @@ input {
 }
 
 
-#loader-bg {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: rgba(18,107,179,1);
-  z-index: 8;
-}
-#loader {
-  display: none;
-  position: fixed;
-  top: 100px;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-  text-align: center;
-  color: #fff;
-  z-index: 8;
-}
-.balls-guruguru {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  background-color:  rgba(18,107,179,1);
-}
-.ball {
-  width: 50%;
-  height: 20px;
-  position: absolute;
-  top: calc(50% - 10px);
-  transform-origin: 100% 50%;
-  left: 0;
-}
-.ball::before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.ball-1::before {
-  animation: ball-guruguru 1s linear 0s infinite;
-}
-.ball-2 {
-  transform: rotate(45deg);
-}
-.ball-2::before {
-  animation: ball-guruguru 1s linear -0.125s infinite;
-}
-.ball-3 {
-  transform: rotate(90deg);
-}
-.ball-3::before {
-  animation: ball-guruguru 1s linear -0.25s infinite;
-}
-.ball-4 {
-  transform: rotate(135deg);
-}
-.ball-4::before {
-  animation: ball-guruguru 1s linear -0.375s infinite;
-}
-.ball-5 {
-  transform: rotate(180deg);
-}
-.ball-5::before {
-  animation: ball-guruguru 1s linear -0.5s infinite;
-}
-.ball-6 {
-  transform: rotate(225deg);
-}
-.ball-6::before {
-  animation: ball-guruguru 1s linear -0.625s infinite;
-}
-.ball-7 {
-  transform: rotate(270deg);
-}
-.ball-7::before {
-  animation: ball-guruguru 1s linear -0.75s infinite;
-}
-.ball-8 {
-  transform: rotate(315deg);
-}
-.ball-8::before {
-  animation: ball-guruguru 1s linear -0.875s infinite;
-}
-@keyframes ball-guruguru {
-  0% {
-    width: 20px;
-    height: 20px;
-    opacity: 1;
-  }
-  100% {
-    width: 6px;
-    height: 6px;
-    opacity: .2;
-    margin-left: 7px;
-  }
-}
 
+.css-fade0 {
+	position: absolute;
+		width: 100%;
+		height: 2250px;
+		background-color: rgba(18,107,179,1);
+		overflow: visible;
+
+	z-index: 9;
+  }
+
+  .css-fade1 {
+	position: absolute;
+		width: 100%;
+		height: 2250px;
+		background-color: rgba(18,107,179,1);
+		overflow: visible;
+    animation-name: fade-in1;
+    animation-duration: 2s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-iteration-count: 1; 
+	animation-direction: normal; 
+	
+	-webkit-animation-name: fade-in1;
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-timing-function: ease-out; 
+    -webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: 1; 
+	-webkit-animation-direction: normal; 
+
+	-moz-animation-name: fade-in1;
+    -moz-animation-duration: 2s; 
+    -moz-animation-timing-function: ease-out; 
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1; 
+	-moz-animation-direction: normal; 
+
+	-ms-animation-name: fade-in1;
+    -ms-animation-duration: 2s; 
+    -ms-animation-timing-function: ease-out; 
+    -ms-animation-delay: 0s;
+    -ms-animation-iteration-count: 1; 
+	-ms-animation-direction: normal; 
+
+
+    opacity: 1;
+	z-index: 11;
+  }
+
+
+  #loadingflower1{
+	position: absolute;
+		width: 350px;
+		height: 350px;
+		left: 50%;
+		top: 88px;
+		overflow: visible;
+		transform:translate(-50%,0);
+    
+
+}
+#loadingflower2{
+	position: absolute;
+		width: 350px;
+		height: 350px;
+		left: 50%;
+		top: 88px;
+		overflow: visible;
+		transform:translate(-50%,0);
+    
+
+}
+.css-fade2 {
+	position: absolute;
+		width: 100%;
+		height: 2250px;
+		background-color: rgba(18,107,179,1);
+		overflow: visible;
+    animation-name: fade-in2;
+    animation-duration: 7s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-iteration-count: 1; 
+	animation-direction: normal; 
+	
+	-webkit-animation-name: fade-in2;
+    -webkit-animation-duration: 7s; 
+    -webkit-animation-timing-function: ease-out; 
+    -webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: 1; 
+	-webkit-animation-direction: normal; 
+
+	-moz-animation-name: fade-in2;
+    -moz-animation-duration: 7s; 
+    -moz-animation-timing-function: ease-out; 
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1; 
+	-moz-animation-direction: normal; 
+
+	-ms-animation-name: fade-in2;
+    -ms-animation-duration: 7s; 
+    -ms-animation-timing-function: ease-out; 
+    -ms-animation-delay: 0s;
+    -ms-animation-iteration-count: 1; 
+	-ms-animation-direction: normal; 
+
+    opacity: 1;
+	z-index: 12;
+  }
+
+  @keyframes fade-in1 {
+    0% {
+      opacity: 0;
+    }
+    80%{
+      opacity: 0;
+    }
+
+    99.9%,to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in2 {
+    0% {
+      opacity: 0;
+    }
+    
+60%{ opacity: 0;}
+   
+
+99.9%,to{
+      opacity: 1;
+    }
+  }
+
+  .freesikaku {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.502));
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 136px;
+		left: 26px;
+		top: 848px;
+		fill: rgba(255,255,255,1)
+	}
+
+	.freesikaku:hover {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.502));
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 136px;
+		left: 26px;
+		top: 848px;
+		fill:rgb(188, 205, 253);
+		
+	}
+
+
+	#________________ {
+		opacity: 0.8;
+		position: absolute;
+		left: 196px;
+		top: 862px;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 35px;
+		margin-top: -7.5px;
+		text-align: left;
+		font-family: DNPShueiMinPr6N;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,84,153,1);
+	}
+	#_____64 {
+		position: absolute;
+		width: 100.554px;
+		height: 76.146px;
+		left: 58px;
+		top: 871px;
+		overflow: visible;
+	}
+	.___496 {
+		overflow: visible;
+		position: absolute;
+		width: 25.426px;
+		height: 7.824px;
+		left: 5.415px;
+		top: 68.322px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.___497 {
+		overflow: visible;
+		position: absolute;
+		width: 25.427px;
+		height: 7.824px;
+		left: 69.719px;
+		top: 68.322px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.___498 {
+		overflow: visible;
+		position: absolute;
+		width: 100.554px;
+		height: 71.122px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+	#freepaperbotan{
+
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 136px;
+		left: 50%;
+		top: 1038px;
+		transform:translate(-55%,0);
+
+
+	}
+
+
+</style>
 	
 	
 </style>
 
 </head>
 <body>
+
+		<div class="css-fade0">		<img id="loadingflower1" src="loadingflower1.png" srcset="loadingflower1.png"></div>
+<div class="css-fade1"><img id="loadingflower2" src="loadingflower2.png" srcset="loadingflower2.png"></div>
+<div class="css-fade2">
 <div id="background">
 
-		<div id="loader-bg">
-				<div id="loader">
-						<div class="balls-guruguru">
-							
-								<span class="ball ball-1"></span>
-								<span class="ball ball-2"></span>
-								<span class="ball ball-3"></span>
-								<span class="ball ball-4"></span>
-								<span class="ball ball-5"></span>
-								<span class="ball ball-6"></span>
-								<span class="ball ball-7"></span>
-								<span class="ball ball-8"></span>
-							  </div>
-				</div>
-			  </div>
-			 
+	
 
 		<div class="menu">
 				<label for="menu_bar01"></label>
 				<input type="checkbox" id="menu_bar01" class="accordion" />
 				<ul id="links01">
-					<li><a href="">○代表挨拶</a></li>
+					<li><a href="https://unstashinkan2020.github.io/daihyou/">○代表挨拶</a></li>
 					<li><a href="">○早稲田祭について</a></li>
 					<li><a href="">○新歓イベント</a></li>
 					<li><a href="">○活動について</a></li>
@@ -1075,6 +1159,7 @@ input {
 	<a href="https://ja-jp.facebook.com/Wasedasai/"><img id="fb" src="facebook.png" srcset="facebook.png 1x, facebook@2x.png 2x"></a>
 	<a href="https://www.youtube.com/channel/UCFh9blapIkxPf4Al3L87QHQ"><img id="youtube" src="youtube.png" srcset="youtube.png 1x, youtube@2x.png 2x"></a>
 
+	<a href="https://unstashinkan2020.github.io/home/">
 	<div id="logoflowerset" class="logoflowerset">
 		<img id="footerlogo" src="S__15999093.png" srcset="S__15999093.png 1x, S__15999093@2x.png 2x">
 		<img id="footerflower" src="S__15999093_.png" srcset="S__15999093_.png 1x, S__15999093_@2x.png 2x">
@@ -1082,10 +1167,10 @@ input {
 			<span>©早稲田祭運営スタッフ2020 All Rights Reserved.</span>
 		</div>
 	</div>
+</a>
 
 
-
-	<img id="picture" src="homeflower.png" srcset="homeflower.png 1x, homeflower@2x.png 2x">
+	<img id="picture" src="homeflower.png" srcset="homeflower.png">
 	
     
 
@@ -1109,11 +1194,11 @@ input {
 			</rect>
 		</svg>
 	</div>
-	<img id="headerlogo" src="S__15999093_bh.png" srcset="S__15999093_bh.png 1x, S__15999093_bh@2x.png 2x">
+	<a href="https://unstashinkan2020.github.io/home/"><img id="headerlogo" src="S__15999093_bh.png" srcset="S__15999093_bh.png 1x, S__15999093_bh@2x.png 2x"></a>
 </div>
 
 <div id="botantachi" class="botantachi">
-
+<a href="https://unstashinkan2020.github.io/daihyou/">
 <div id="daihyoubotan" class="daihyoubotan">
 	<svg class="sikaku">
 		<rect  id="sikaku" rx="5" ry="5" x="0" y="0" width="144" height="118">
@@ -1135,6 +1220,8 @@ input {
 		<span>代表挨拶</span>
 	</div>
 </div>
+</a>
+
 
 <div id="wasesaibotan" class="wasesaibotan">
 	<svg class="sikaku">
@@ -1327,7 +1414,37 @@ input {
 
 </div>
 
+<div id="freepaperbotan">
+<svg class="freesikaku">
+		<rect  id="____226" rx="5" ry="5" x="0" y="0" width="325" height="118">
+		</rect>
+	</svg>
+	<div id="________________">
+			<span>電子版<br/>フリーペーパー<br/>はこちら</span>
+		</div>
 
+		<div id="_____64">
+				<svg class="___496" viewBox="165.415 220.641 25.426 7.824">
+					<path fill="rgba(18,107,179,1)" id="___496" d="M 185.4080047607422 223.7089996337891 L 185.0789947509766 223.5870056152344 C 181.2380065917969 222.1380004882812 177.2660064697266 220.6410064697266 172.6190032958984 220.6410064697266 C 170.3110046386719 220.6410064697266 168.0659942626953 221.0059967041016 165.7550048828125 221.7590026855469 L 165.4149932861328 221.8699951171875 L 165.4149932861328 225.0529937744141 C 165.4149932861328 225.6510009765625 165.9010009765625 226.1369934082031 166.4989929199219 226.1369934082031 C 166.5980072021484 226.1369934082031 166.6959991455078 226.1230010986328 166.7940063476562 226.0959930419922 C 170.0509948730469 225.1759948730469 172.4839935302734 224.6430053710938 175.281005859375 224.6430053710938 C 179.2019958496094 224.6430053710938 183.656005859375 225.7089996337891 190.1730041503906 228.2079925537109 L 190.8410034179688 228.4649963378906 L 190.8410034179688 225.5339965820312 L 189.7429962158203 225.2109985351562 C 188.3090057373047 224.7929992675781 186.8999938964844 224.2660064697266 185.4080047607422 223.7089996337891 Z">
+					</path>
+				</svg>
+				<svg class="___497" viewBox="193.165 220.641 25.427 7.824">
+					<path fill="rgba(18,107,179,1)" id="___497" d="M 211.3869934082031 220.6410064697266 C 206.7409973144531 220.6410064697266 202.7680053710938 222.1380004882812 198.9279937744141 223.5859985351562 L 198.5980072021484 223.7089996337891 C 197.1060028076172 224.2660064697266 195.6970062255859 224.7929992675781 194.2619934082031 225.2120056152344 L 193.1649932861328 225.5339965820312 L 193.1649932861328 228.4649963378906 L 193.8339996337891 228.2079925537109 C 200.3509979248047 225.7089996337891 204.8049926757812 224.6430053710938 208.7259979248047 224.6430053710938 C 211.5220031738281 224.6430053710938 213.9550018310547 225.1759948730469 217.2149963378906 226.0970001220703 C 217.3110046386719 226.1230010986328 217.4089965820312 226.1369934082031 217.5070037841797 226.1369934082031 C 218.1049957275391 226.1369934082031 218.5919952392578 225.6510009765625 218.5919952392578 225.0529937744141 L 218.5919952392578 221.8699951171875 L 218.2519989013672 221.7590026855469 C 215.9409942626953 221.0059967041016 213.6950073242188 220.6410064697266 211.3869934082031 220.6410064697266 Z">
+					</path>
+				</svg>
+				<svg class="___498" viewBox="160 180 100.554 71.122">
+					<path fill="rgba(18,107,179,1)" id="___498" d="M 256.4300537109375 184.2191162109375 C 249.0675659179688 181.4211120605469 241.8355102539062 180 234.9349975585938 180 C 222.0860290527344 180 213.6850280761719 184.8985595703125 210.2818908691406 187.3560180664062 C 206.8787536621094 184.8985595703125 198.4777526855469 180 185.63037109375 180 C 178.7298278808594 180 171.4977416992188 181.4211120605469 164.1353149414062 184.2191162109375 L 160.0110168457031 185.7875671386719 L 160.0110168457031 232.0291442871094 L 160 247.820068359375 L 160.0110168457031 247.815185546875 L 160.0110168457031 247.8511657714844 L 168.4371337890625 244.6455078125 C 169.2164306640625 244.3442687988281 170.0522766113281 244.0593872070312 170.9981384277344 243.7761535644531 C 173.9849243164062 242.8625793457031 176.8742980957031 242.4189147949219 179.8265075683594 242.4189147949219 C 186.5337829589844 242.4189147949219 192.510498046875 244.751953125 198.3646240234375 247.0391235351562 C 200.8078002929688 247.9903564453125 203.3326416015625 248.9759521484375 205.9093627929688 249.7781982421875 L 210.2818908691406 251.1223449707031 L 214.656005859375 249.7765502929688 C 217.2326965332031 248.9759521484375 219.757568359375 247.9903564453125 222.2729797363281 247.0080261230469 C 228.0548706054688 244.751953125 234.0315856933594 242.4189147949219 240.7372741699219 242.4189147949219 C 243.6895141601562 242.4189147949219 246.564697265625 242.8576965332031 249.5279235839844 243.7630615234375 C 250.5209045410156 244.0626525878906 251.3473510742188 244.3426513671875 252.13134765625 244.6471557617188 L 258.3845825195312 247.0260314941406 L 260.5229187011719 247.8511657714844 L 260.5229187011719 247.8380737304688 L 260.5543518066406 247.8511657714844 L 260.5543518066406 185.7875671386719 L 256.4300537109375 184.2191162109375 Z M 206.6084899902344 230.8454284667969 L 206.5975341796875 242.3059387207031 C 204.7325439453125 241.6788940429688 202.8283081054688 240.9339599609375 200.8297729492188 240.1529846191406 C 194.7399597167969 237.7741088867188 187.8362731933594 235.0759887695312 179.8265075683594 235.0759887695312 C 176.2741088867188 235.0759887695312 172.6525573730469 235.6260986328125 169.0703125 236.7115783691406 C 168.5628356933594 236.8605346679688 168.0223693847656 237.0422973632812 167.4803161621094 237.2272644042969 C 167.3388977050781 237.2698364257812 167.2037963867188 237.3140563964844 167.0576782226562 237.35498046875 L 167.0576782226562 190.9300537109375 C 173.468017578125 188.549560546875 179.71337890625 187.3429260253906 185.63037109375 187.3429260253906 C 197.4517822265625 187.3429260253906 204.6744079589844 192.157958984375 206.6084899902344 193.6298217773438 L 206.6084899902344 230.8454284667969 Z M 253.5076904296875 226.0467224121094 L 253.4966735839844 237.3615417480469 C 252.8053588867188 237.115966796875 252.1360473632812 236.8998413085938 251.4997253417969 236.7131958007812 C 247.9112243652344 235.6260986328125 244.291259765625 235.0759887695312 240.7372741699219 235.0759887695312 C 232.7275085449219 235.0759887695312 225.8238220214844 237.7741088867188 219.7339782714844 240.1529846191406 C 217.9994201660156 240.8324584960938 216.3418579101562 241.4676818847656 214.7125549316406 242.0374145507812 C 214.461181640625 242.1209106445312 214.2082214355469 242.2191772460938 213.9568176269531 242.2977294921875 L 213.9568176269531 193.6298217773438 C 215.8893737792969 192.157958984375 223.1119995117188 187.3429260253906 234.9349975585938 187.3429260253906 C 240.8504028320312 187.3429260253906 247.0973510742188 188.549560546875 253.5076904296875 190.9300537109375 L 253.5076904296875 226.0467224121094 Z">
+					</path>
+				</svg>
+			</div>
+		
+		</div>
+		
+
+
+
+
+</div>
 
 </body>
 </html>
