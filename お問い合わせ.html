@@ -63,6 +63,18 @@
 		top: 103px;
 		transform:translate(-50%,0);
 	}
+
+	.whitesquare2 {
+		position: absolute;
+		overflow: visible;
+		width: 329px;
+		height: 30px;
+		left: 50%;
+		top: 603px;
+		transform:translate(-34%,0);
+	}
+
+
 	.shirowaku {
 		position: absolute;
 		overflow: visible;
@@ -205,6 +217,7 @@
 		font-size: 20px;
 		color: rgba(248,250,253,1);
 		transform:translate(-50%,0);
+		text-align: center;
 
 
 	}
@@ -216,7 +229,7 @@
 		height: 67px;
 		left: 50%;
 		top: 809px;
-		transform:translate(-50%,0);
+		transform:translate(-47%,0);
 		-webkit-transition: all .3s;
         transition: all .3s;
 		fill:rgba(255,255,255,1);
@@ -230,13 +243,13 @@
 		height: 67px;
 		left: 50%;
 		top: 809px;
-		transform:translate(-50%,0);
+		transform:translate(-47%,0);
         fill:rgb(188, 205, 253);
 }
 
 	#faq {
 		position: absolute;
-		left: 49%;
+		left: 50%;
 		top: 816px;
 		overflow: visible;
 		width: 201px;
@@ -362,6 +375,8 @@ input {
 
 
 
+
+
 </style>
 
 
@@ -374,6 +389,10 @@ input {
 	<img id="flower" src="backflower.png" srcset="backflower.png 1x, backflower@2x.png 2x">
 	<svg class="whitesquare">
 		<rect fill="rgba(255,255,255,1)" id="____53" rx="0" ry="0" x="0" y="0" width="329" height="186">
+		</rect>
+	</svg>
+	<svg class="whitesquare2">
+		<rect fill="rgba(255,255,255,1)" id="____53" rx="0" ry="0" x="0" y="0" width="225" height="37">
 		</rect>
 	</svg>
 	<svg class="shirowaku">
@@ -389,21 +408,23 @@ input {
 	<a href="https://ja-jp.facebook.com/Wasedasai/"><img id="fb" src="facebook.png" srcset="facebook.png 1x, facebook@2x.png 2x"></a>
 	<a href="https://www.youtube.com/channel/UCFh9blapIkxPf4Al3L87QHQ"><img id="youtube" src="youtube.png" srcset="youtube.png 1x, youtube@2x.png 2x"></a>
 
-	<div id="logoflowerset" class="logoflowerset">
-		<img id="footerlogo" src="S__15999093.png" srcset="S__15999093.png 1x, S__15999093@2x.png 2x">
-		<img id="footerflower" src="S__15999093_.png" srcset="S__15999093_.png 1x, S__15999093_@2x.png 2x">
-		<div id="allrights">
-			<span>©早稲田祭運営スタッフ2020 All Rights Reserved.</span>
+	<a href="https://unstashinkan2020.github.io/home/">
+		<div id="logoflowerset" class="logoflowerset">
+			<img id="footerlogo" src="S__15999093.png" srcset="S__15999093.png 1x, S__15999093@2x.png 2x">
+			<img id="footerflower" src="S__15999093_.png" srcset="S__15999093_.png 1x, S__15999093_@2x.png 2x">
+			<div id="allrights">
+				<span>©早稲田祭運営スタッフ2020 All Rights Reserved.</span>
+			</div>
 		</div>
-	</div>
-
+	</a>
+	
 
 	<div id="otoiawase">
 		<span>お問い合わせ</span>
 	</div>
-	<img id="picture" src="c0045456394a154f25abec72877cea.png" srcset="c0045456394a154f25abec72877cea.png 1x, c0045456394a154f25abec72877cea@2x.png 2x">
+	<img id="picture" src="iisya3.jpg" srcset="iisya3.jpg">
 	<div id="honbun">
-		<span>早稲田祭2020運営スタッフや新歓企画などについて、何かご質問がございましたら<br/><br/><a href="mailto:shinkan@wasedasai.net">shinkan@wasedasai.net</a><br/><br/>までお気軽にお問い合わせください。</span>
+		<span>早稲田祭2020運営スタッフや新歓企画などについて、何かご質問がございましたら<br/><br/><a href="mailto:shinkan@wasedasai.net">shinkan@wasedasai.net</a><br/><br/>までお気軽にお問い合わせ<br/>ください。</span>
 	</div>
 	<svg class="faqbotan">
 		<rect  id="____74" rx="5" ry="5" x="0" y="0" width="246" height="49">
@@ -431,7 +452,7 @@ input {
 			</rect>
 		</svg>
 	</div>
-	<img id="headerlogo" src="S__15999093_bh.png" srcset="S__15999093_bh.png 1x, S__15999093_bh@2x.png 2x">
+	<a href="https://unstashinkan2020.github.io/home/"><img id="headerlogo" src="S__15999093_bh.png" srcset="S__15999093_bh.png 1x, S__15999093_bh@2x.png 2x"></a>
 </div>
 
 <div class="menu">
@@ -439,11 +460,11 @@ input {
     <input type="checkbox" id="menu_bar01" class="accordion" />
     <ul id="links01">
         <li><a href="">○代表挨拶</a></li>
-        <li><a href="">○早稲田祭について</a></li>
+        <li><a href="https://unstashinkan2020.github.io/wasedasai/">○早稲田祭について</a></li>
         <li><a href="">○新歓イベント</a></li>
-		<li><a href="">○活動について</a></li>
+		<li><a href="https://unstashinkan2020.github.io/katudou/">○活動について</a></li>
 		<li><a href="">○入会方法</a></li>
-		<li><a href="">○お問い合わせ/FAQ</a></li>
+		<li><a href="https://unstashinkan2020.github.io/otoiawase/">○お問い合わせ/FAQ</a></li>
 		
     </ul>
 
